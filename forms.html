@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="formsstyle.css">
+    </head>
+    <body>
+        <form>
+            <h1>Account Infromation</h1>
+            Name              :<input type="text" name="username"><br>
+            Number            :<input type="tel" name="usernumber"><br>
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label><br><br>
+            <label for="userabout">About:</label>
+            <textarea name="userabout" id="userabout" rows="4" placeholder="Tell us something about yourself..."></textarea><br>  
+            DOB               :<input type="date" name="dateofbirth"><br>
+            Age: <input type="number" name="userage" min="18" required><br>
+         
+            Email   :<input type="email" name="useremail"><br>
+            <select id="Interest" name="userinterest">
+                <option value="Not selected">Not selected</option>
+                <option value="Art">Art</option>
+                <option value="Hiking">Hiking</option>
+                <option value="Travelling">Travelling</option>
+                <option value="Photography">Photography</option>
+                <option value="Editing">Editing</option>
+                <option value="Cooking">cooking</option>
+                <option value="Cycling">cycling</option>
+                <option value="Gym">Gym</option>
+
+                <option value="Others">others</option>
+            </select><br>
+        </form>
+        <form action="Thanks.html" method="POST">
+            <button type="submit">Submit</button>
+        </form>
+    </body>
